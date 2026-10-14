@@ -31,6 +31,7 @@ if wybor == 1:
 
   plt.tight_layout()
   plt.show()
+  print(ax1)
 
 if wybor == 2:
 
@@ -45,7 +46,7 @@ if wybor == 2:
  
   t = np.linspace(0, 10, 500)
   # Jedno główne równanie w Pythonie:
-  y2 = c * np.exp(a * t) * np.cos(omega * t)
+  y2 = 4 * np.exp(-0.5 * t) * np.cos(3 * t)
   
   # Opcjonalnie: obwiednia wykresu (pokazuje jak zanika amplituda)
   obwiednia_gorna = c * np.exp(a * t)
@@ -88,7 +89,7 @@ if wybor == 2:
 
 
 
-  if y1 - y2 == 0:
+#if y1 - y2 == 0:
   print(ax1)
   
   
