@@ -1,13 +1,8 @@
-# Welcome to Python Compiler! Press Ctrl+Enter to run
-print("Hello, World!")
+import matplotlib.pyplot as plt
+import math
 
-# Pandas example
-import pandas as pd
-df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
-print("\nDataFrame:\n", df)
+x = int()
 
-# Matplotlib example (uncomment to run)
-# import matplotlib.pyplot as plt
-# plt.plot([1, 2, 3], [1, 4, 9])
-# plt.title('Simple Plot')
-# plt.show()
+t = math.e**(x)
+k = math.sin(x)
+
