@@ -23,7 +23,7 @@ print(f"Pole pod wykresem: {pole:.6f}")
 
 # Wizualizacja: wykres + zaznaczone pole
 fig, ax = plt.subplots()
-ax.plot(x, y, 'b', linewidth=2, label='f(x) = x²')
+ax.plot(x, y, 'b', linewidth=2, label='f(x) = do zdefiniowania')
 ax.fill_between(x, y, alpha=0.3, color='green', label='pole pod wykresem')
 ax.legend()
 plt.show()
