@@ -2,9 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ==========================================
-# 1. DEFINICJA SYGNAŁÓW
-# ==========================================
+
 
 dt = 0.01
 t = np.arange(-5, 5 + dt, dt)
@@ -20,9 +18,7 @@ def h(t):
 xt = x(t)
 ht = h(t)
 
-# ==========================================
-# 2. OBLICZANIE SPLOTU
-# ==========================================
+
 
 # Przybliżenie całki przez sumę
 y = np.convolve(xt, ht, mode="full") * dt
@@ -30,9 +26,6 @@ y = np.convolve(xt, ht, mode="full") * dt
 # Oś czasu wyniku splotu
 ty = np.arange(2 * len(t) - 1) * dt + 2 * t[0]
 
-# ==========================================
-# 3. WYBÓR CHWILI DO POKAZANIA SPLOTU
-# ==========================================
 
 t0 = 0.5
 
@@ -45,9 +38,6 @@ product = xt * h_shift
 # Przybliżona wartość całki dla wybranej chwili
 y_t0 = np.sum(product) * dt
 
-# ==========================================
-# 4. RYSOWANIE WYKRESÓW
-# ==========================================
 
 fig, ax = plt.subplots(3, 2, figsize=(13, 10))
 
