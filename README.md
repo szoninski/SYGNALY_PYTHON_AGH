@@ -18,6 +18,7 @@ No setup needed. Each badge opens the file in a free online Python editor and ru
 | [`calka_fourier.py`](./calka_fourier.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/calka_fourier.py) |
 | [`fourier.py`](./fourier.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/fourier.py) |
 | [`fourier_anal_1.py`](./fourier_anal_1.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/fourier_anal_1.py) |
+| [`liczenie_calki-my-copy.py`](./liczenie_calki-my-copy.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/liczenie_calki-my-copy.py) |
 | [`main.py`](./main.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/main.py) |
 | [`splajny.py`](./splajny.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/splajny.py) |
 | [`temat4_2.py`](./temat4_2.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/temat4_2.py) |
