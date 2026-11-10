@@ -1,33 +1,54 @@
-# New Python file
 
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import signal
 
 # Parametry sygnałów
-A = 1               # Amplituda
-phi = 0             # Faza początkowa
+A = 1
+phi = 0
 omega0 = 0.2 * np.pi
-omega1 = omega0
-omega2 = omega0 + 2 * np.pi
 
-# Zakres próbek
-n = np.arange(0, 50, 1)
+# Dwie różne długości sygnałów
+N1 = 30
+N2 = 50
 
-# Obliczenie sygnałów
-x1 = A * np.cos(omega1 * n + phi)
-x2 = A * np.cos(omega2 * n + phi)
+# Przedziały próbek
+n1 = np.arange(N1)
+n2 = np.arange(N2)
 
-# Rysowanie wykresów
-plt.figure(figsize=(10, 5))
+# Generowanie dwóch sygnałów
+x1 = A * np.cos(omega0 * n1 + phi)
+x2 = A * np.cos((omega0 + 2*np.pi) * n2 + phi)
 
-plt.stem(n, x1, linefmt='b-', markerfmt='bo',
-         basefmt='k-', label='omega0')
-plt.stem(n, x2, linefmt='r--', markerfmt='rx',
-         basefmt='k-', label='omega0 + 2pi')
+# Splot sygnałów
+y = signal.convolve(x1, x2, mode='full')
 
-plt.title('Porównanie dwóch sygnałów sinusoidalnych')
-plt.xlabel('Numer próbki n')
+# Oś próbek dla wyniku splotu
+n3 = np.arange(len(y))
+
+# Wykresy
+plt.figure(figsize=(12, 8))
+
+plt.subplot(3, 1, 1)
+plt.stem(n1, x1)
+plt.title('Pierwszy sygnał sinusoidalny (N = 30)')
+plt.xlabel('Próbka n')
 plt.ylabel('Amplituda')
-plt.legend()
-plt.grid(True)
+plt.grid()
+
+plt.subplot(3, 1, 2)
+plt.stem(n2, x2)
+plt.title('Drugi sygnał sinusoidalny (N = 50)')
+plt.xlabel('Próbka n')
+plt.ylabel('Amplituda')
+plt.grid()
+
+plt.subplot(3, 1, 3)
+plt.stem(n3, y)
+plt.title('Splot dwóch sygnałów')
+plt.xlabel('Próbka n')
+plt.ylabel('Amplituda')
+plt.grid()
+
+plt.tight_layout()
 plt.show()
