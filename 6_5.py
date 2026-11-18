@@ -4,9 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal
 
-# ==========================================
-# 1. PARAMETRY
-# ==========================================
+
 
 Fs = 5000
 Fpass = 1000
@@ -14,9 +12,6 @@ Fstop = 1500
 Rp = 1
 Rs = 30
 
-# ==========================================
-# 2. PROJEKTOWANIE FILTROW
-# ==========================================
 
 # Butterworth
 n_b, wn_b = signal.buttord(
@@ -55,9 +50,6 @@ filters = {
     "Elliptic": (b_e, a_e)
 }
 
-# ==========================================
-# 3. RZEDY I TRANSMITANCJE FILTROW
-# ==========================================
 
 print("RZEDY FILTROW:")
 print("Butterworth:", n_b)
