@@ -62,13 +62,7 @@ for name, (b, a) in filters.items():
     print("Licznik B =", np.round(b, 6))
     print("Mianownik A =", np.round(a, 6))
 
-# H(z) = B(z) / A(z)
-# B(z) = b0 + b1*z^-1 + ...
-# A(z) = a0 + a1*z^-1 + ...
 
-# ==========================================
-# 4. ZERA I BIEGUNY
-# ==========================================
 
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 
@@ -106,9 +100,9 @@ plt.suptitle("Zera i bieguny filtrow IIR")
 plt.tight_layout()
 plt.show()
 
-# ==========================================
-# 5. CHARAKTERYSTYKI AMPLITUDOWE
-# ==========================================
+
+# . CHARAKTERYSTYKI AMPLITUDOWE
+
 
 plt.figure(figsize=(12, 6))
 
@@ -140,9 +134,9 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-# ==========================================
-# 6. CHARAKTERYSTYKI FAZOWE
-# ==========================================
+
+# CHARAKTERYSTYKI FAZOWE
+
 
 plt.figure(figsize=(12, 6))
 
