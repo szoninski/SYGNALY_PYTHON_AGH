@@ -16,6 +16,7 @@ No setup needed. Each badge opens the file in a free online Python editor and ru
 | [`6_3.py`](./6_3.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/6_3.py) |
 | [`6_4.py`](./6_4.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/6_4.py) |
 | [`6_5.py`](./6_5.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/6_5.py) |
+| [`6_6_1.py`](./6_6_1.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/6_6_1.py) |
 | [`analiza_syngalowa.py`](./analiza_syngalowa.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/analiza_syngalowa.py) |
 | [`aproksymacja_fouriera.py`](./aproksymacja_fouriera.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/aproksymacja_fouriera.py) |
 | [`calka_fourier.py`](./calka_fourier.py) | [![Run in Python Compiler](https://pythoncompiler.io/badge-run.svg)](https://pythoncompiler.io/?gh=szoninski/python-practice/main/calka_fourier.py) |
